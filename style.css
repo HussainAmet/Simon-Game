@@ -1,0 +1,158 @@
+body{
+    background-color: #246ABC;
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    color: rgb(27, 3, 248);
+    -webkit-text-stroke: #0FFFFA 2px;
+}
+h2{
+    text-align: center;
+    font-size: 42px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-style: italic;
+    color: #E4B17F;
+    text-shadow: black 1px 1px;
+}
+h3{
+    display: inline-block;
+    border: #F9FBE7 solid 4px;
+    border-radius: 10px;
+    background-color: #F9FBE7;  
+    color: #E4B17F;
+    font-weight: 600;
+    -webkit-text-stroke:  1px;
+    padding: 5px 10px;
+    text-shadow: black 2px 2px;
+}
+.family{
+    font-family: 'Titillium Web', sans-serif;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    width: fit-content;
+    margin: auto;
+    gap: 30px;
+}
+.button{
+    height: 130px;
+    width: 130px;
+    border: 10px solid black;
+    border-radius: 30px;
+    box-shadow: #E4B17F 3px 3px;
+    cursor: crosshair;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+.click-red{
+    background-color: rgb(109, 5, 5);
+    box-shadow: #246ABC 1px 1px;
+}
+.click-blue{
+    background-color: rgb(8, 8, 117);
+    box-shadow: #246ABC 1px 1px;
+}
+.click-yellow{
+    background-color: rgb(115, 117, 8);
+    box-shadow: #246ABC 1px 1px;
+}
+.click-green{
+    background-color: rgb(6, 54, 4);
+    box-shadow: #246ABC 1px 1px;
+}
+.m0{
+    margin: 0;
+}
+.start_game{
+    padding: 0;
+    border: 0;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 18px auto;
+    display: none;
+}
+.mainheader {
+    display: flex;
+    justify-content: space-around;
+}
+.mainheader > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.bsg{
+    color: #F9FBE7;
+    border: #10c728 solid 4px;
+    background-color: #10c728;
+}
+.click-bsg{
+    color: #10c728;
+    border: #F9FBE7 solid 4px;
+    background-color: #F9FBE7;
+}
+
+@media (max-width: 700px) and (min-width: 500px){
+    .title{
+        visibility:hidden;
+    }
+    .start_game{
+        display: block;
+    }
+    .mainheader{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mainheader > div{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 500px){
+    .title{
+        visibility:hidden;
+    }
+    h1{
+        font-size: 60px;
+        margin-top: 20px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 14px;
+    }
+    .button{
+        height: 100px;
+        width: 100px;
+        border: 8px solid black;
+    }
+    .mainheader{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mainheader > div{
+        display: flex;
+        justify-content: space-around;
+    }
+    .start_game{
+        margin: 18px auto;
+        display: block;
+    }
+}

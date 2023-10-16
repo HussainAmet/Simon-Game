@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="family">Simon Game</h1>
+    <h2 class="family title">Press A to Start The Game</h2>
+    <div class="mainheader">
+        <div>
+            <h3 draggable="true" class="family high">Highest Score : <span>0</span></h3>
+            <h3 draggable="true" class="family current">Current Score : <span>0</span></h3>
+        </div>
+        <button class="start_game family"><h3 class="m0 bsg">Start Game</h3></button>
+    </div>
+    <div class="grid-container">
+        <button class="red button colored"></button>
+        <button class="blue button colored"></button>
+        <button class="green button colored"></button>
+        <button class="yellow button colored"></button>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./index.js" charset="UTF-8"></script>
+</body>
+</html>
