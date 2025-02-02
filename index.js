@@ -52,7 +52,7 @@ function computer(){
     setTimeout(function (){
         $('.colored').prop('disabled', false);
         $('.title').css('visibility','visible');
-        $('.title').empty().append(`Your Turn`);
+        $('.title').empty().append(`Click The First Color`);
         $("." + buttonClick).removeClass("click-" + buttonClick);
     }, 1000);
     computerColor.push(buttonClick);
